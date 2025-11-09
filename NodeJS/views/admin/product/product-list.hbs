@@ -1,0 +1,239 @@
+<!-- Breadcrumbs-->
+<ol class="breadcrumb">
+    <li class="breadcrumb-item">
+        <a href="/admin">Dashboard</a>
+    </li>
+    <li class="breadcrumb-item active">Room Management</li>
+</ol>
+
+<!-- Page Heading -->
+<div class="d-sm-flex align-items-center justify-content-between mb-4">
+    <h1 class="h3 mb-0 text-gray-800">All Rooms</h1>
+    <a href="/admin/rooms/add" class="d-none d-sm-inline-block btn btn-sm btn-primary shadow-sm">
+        <i class="fas fa-plus fa-sm text-white-50"></i> Add New Room
+    </a>
+</div>
+
+<!-- DataTales Example -->
+<div class="card shadow mb-4">
+    <div class="card-header py-3 d-flex justify-content-between align-items-center">
+        <h6 class="m-0 font-weight-bold text-primary">Room List</h6>
+        <div class="btn-group">
+            <button type="button" class="btn btn-outline-primary btn-sm dropdown-toggle" data-toggle="dropdown">
+                <i class="fas fa-filter"></i> Filter
+            </button>
+            <div class="dropdown-menu">
+                <a class="dropdown-item" href="#">All Rooms</a>
+                <a class="dropdown-item" href="#">Available</a>
+                <a class="dropdown-item" href="#">Occupied</a>
+                <a class="dropdown-item" href="#">Under Maintenance</a>
+                <a class="dropdown-item" href="#">Cleaning Required</a>
+            </div>
+        </div>
+    </div>
+    <div class="card-body">
+        <div class="table-responsive">
+            <table class="table table-bordered" id="dataTable" width="100%" cellspacing="0">
+                <thead>
+                <tr>
+                    <th>Room No</th>
+                    <th>Image</th>
+                    <th>Room Details</th>
+                    <th>Room Type</th>
+                    <th>Floor</th>
+                    <th>Price/Night</th>
+                    <th>Status</th>
+                    <th>Last Updated</th>
+                    <th>Actions</th>
+                </tr>
+                </thead>
+                <tbody>
+                <tr>
+                    <td><strong>301</strong></td>
+                    <td>
+                        <img src="/img/room-1.jpg" alt="Deluxe Suite" style="width: 50px; height: 50px; object-fit: cover; border-radius: 4px;">
+                    </td>
+                    <td>
+                        <strong>Deluxe Suite 301</strong>
+                        <br>
+                        <small class="text-muted">King Bed • Ocean View</small>
+                    </td>
+                    <td>Deluxe Suite</td>
+                    <td>3rd Floor</td>
+                    <td>$450</td>
+                    <td>
+                        <span class="badge badge-success">Available</span>
+                    </td>
+                    <td>2024-01-15</td>
+                    <td>
+                        <div class="btn-group btn-group-sm">
+                            <a href="/admin/rooms/edit/301" class="btn btn-warning">
+                                <i class="fas fa-edit"></i>
+                            </a>
+                            <button class="btn btn-danger">
+                                <i class="fas fa-trash"></i>
+                            </button>
+                            <button class="btn btn-info">
+                                <i class="fas fa-eye"></i>
+                            </button>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td><strong>205</strong></td>
+                    <td>
+                        <img src="/img/room-2.jpg" alt="Executive Room" style="width: 50px; height: 50px; object-fit: cover; border-radius: 4px;">
+                    </td>
+                    <td>
+                        <strong>Executive Room 205</strong>
+                        <br>
+                        <small class="text-muted">Queen Bed • City View</small>
+                    </td>
+                    <td>Executive Room</td>
+                    <td>2nd Floor</td>
+                    <td>$320</td>
+                    <td>
+                        <span class="badge badge-warning">Occupied</span>
+                    </td>
+                    <td>2024-01-14</td>
+                    <td>
+                        <div class="btn-group btn-group-sm">
+                            <a href="/admin/rooms/edit/205" class="btn btn-warning">
+                                <i class="fas fa-edit"></i>
+                            </a>
+                            <button class="btn btn-danger">
+                                <i class="fas fa-trash"></i>
+                            </button>
+                            <button class="btn btn-info">
+                                <i class="fas fa-eye"></i>
+                            </button>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td><strong>101</strong></td>
+                    <td>
+                        <img src="/img/room-3.jpg" alt="Standard Room" style="width: 50px; height: 50px; object-fit: cover; border-radius: 4px;">
+                    </td>
+                    <td>
+                        <strong>Standard Room 101</strong>
+                        <br>
+                        <small class="text-muted">Double Bed • Garden View</small>
+                    </td>
+                    <td>Standard Room</td>
+                    <td>1st Floor</td>
+                    <td>$280</td>
+                    <td>
+                        <span class="badge badge-danger">Under Maintenance</span>
+                    </td>
+                    <td>2024-01-13</td>
+                    <td>
+                        <div class="btn-group btn-group-sm">
+                            <a href="/admin/rooms/edit/101" class="btn btn-warning">
+                                <i class="fas fa-edit"></i>
+                            </a>
+                            <button class="btn btn-danger">
+                                <i class="fas fa-trash"></i>
+                            </button>
+                            <button class="btn btn-info">
+                                <i class="fas fa-eye"></i>
+                            </button>
+                        </div>
+                    </td>
+                </tr>
+
+                </tbody>
+            </table>
+        </div>
+
+        <!-- Pagination -->
+        <nav aria-label="Page navigation example">
+            <ul class="pagination justify-content-center">
+                <li class="page-item disabled">
+                    <a class="page-link" href="#" tabindex="-1">Previous</a>
+                </li>
+                <li class="page-item active"><a class="page-link" href="#">1</a></li>
+                <li class="page-item"><a class="page-link" href="#">2</a></li>
+                <li class="page-item"><a class="page-link" href="#">3</a></li>
+                <li class="page-item">
+                    <a class="page-link" href="#">Next</a>
+                </li>
+            </ul>
+        </nav>
+    </div>
+</div>
+
+<!-- Quick Stats Cards -->
+<div class="row">
+    <div class="col-xl-3 col-md-6 mb-4">
+        <div class="card border-left-primary shadow h-100 py-2">
+            <div class="card-body">
+                <div class="row no-gutters align-items-center">
+                    <div class="col mr-2">
+                        <div class="text-xs font-weight-bold text-primary text-uppercase mb-1">
+                            Total Rooms
+                        </div>
+                        <div class="h5 mb-0 font-weight-bold text-gray-800">245</div>
+                    </div>
+                    <div class="col-auto">
+                        <i class="fas fa-bed fa-2x text-gray-300"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="col-xl-3 col-md-6 mb-4">
+        <div class="card border-left-success shadow h-100 py-2">
+            <div class="card-body">
+                <div class="row no-gutters align-items-center">
+                    <div class="col mr-2">
+                        <div class="text-xs font-weight-bold text-success text-uppercase mb-1">
+                            Available Rooms
+                        </div>
+                        <div class="h5 mb-0 font-weight-bold text-gray-800">156</div>
+                    </div>
+                    <div class="col-auto">
+                        <i class="fas fa-check-circle fa-2x text-gray-300"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="col-xl-3 col-md-6 mb-4">
+        <div class="card border-left-warning shadow h-100 py-2">
+            <div class="card-body">
+                <div class="row no-gutters align-items-center">
+                    <div class="col mr-2">
+                        <div class="text-xs font-weight-bold text-warning text-uppercase mb-1">
+                            Occupied Rooms
+                        </div>
+                        <div class="h5 mb-0 font-weight-bold text-gray-800">72</div>
+                    </div>
+                    <div class="col-auto">
+                        <i class="fas fa-user-friends fa-2x text-gray-300"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="col-xl-3 col-md-6 mb-4">
+        <div class="card border-left-danger shadow h-100 py-2">
+            <div class="card-body">
+                <div class="row no-gutters align-items-center">
+                    <div class="col mr-2">
+                        <div class="text-xs font-weight-bold text-danger text-uppercase mb-1">
+                            Under Maintenance
+                        </div>
+                        <div class="h5 mb-0 font-weight-bold text-gray-800">17</div>
+                    </div>
+                    <div class="col-auto">
+                        <i class="fas fa-tools fa-2x text-gray-300"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
